@@ -25,9 +25,14 @@ spring:
       pricing-tier: standard
       topic-client-id: ffea4214-f800-424a-aed2-bc9a849f1389
 
+
 zorlac:
   service-bus:
     topic: zorlac-xam-service-topic1
     queue: zorlac-xam-service-que1
     subscriptions: zorlac-xam-service-topic1-subs1
+
+springdoc.swagger-ui.path: '/swagger-ui.html'
+
+
 
