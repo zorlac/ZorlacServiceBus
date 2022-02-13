@@ -1,0 +1,33 @@
+
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521/XEPDB1
+    username: system
+    password: admin
+    type: com.zaxxer.hikari.HikariDataSource
+    hikari:
+      maximum-pool-size: 3
+      connection-init-sql: ALTER SESSION SET CURRENT_SCHEMA=ZORLAC_LOCAL
+  flyway:
+    table: flyway_schema_history
+    url: jdbc:oracle:thin:@localhost:1521/XEPDB1
+    user: ZORLAC_LOCAL
+    password: admin123
+    placeholders:
+      schema: ZORLAC_LOCAL
+      appUser: ZORLAC_LOCAL_APP
+      batchUser: ZORLAC_LOCAL_BATCH
+    locations: 'classpath:/db/migration'
+  jms:
+    servicebus:
+      connection-string: 'Endpoint=sb://zorlac-xam-service.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=OGTHYTh575QSYT6GP/G2u4HOqeBuMmtyTfK0IcM2mN4='
+      idle-timeout: 1800000
+      pricing-tier: standard
+      topic-client-id: ffea4214-f800-424a-aed2-bc9a849f1389
+
+zorlac:
+  service-bus:
+    topic: zorlac-xam-service-topic1
+    queue: zorlac-xam-service-que1
+    subscriptions: zorlac-xam-service-topic1-subs1
+
