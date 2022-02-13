@@ -1,9 +1,9 @@
-package xam.zorlac.servicebus.zorlacservicebus.messageio;
+package xam.zorlac.servicebus.messageio;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.jms.core.JmsTemplate;
 import org.springframework.stereotype.Service;
-import xam.zorlac.servicebus.zorlacservicebus.models.PlanDetails;
+import xam.zorlac.servicebus.models.PlanDetails;
 
 @Service
 public class ServiceBusSender {

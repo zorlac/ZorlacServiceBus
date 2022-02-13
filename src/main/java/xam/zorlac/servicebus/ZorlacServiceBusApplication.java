@@ -1,4 +1,4 @@
-package xam.zorlac.servicebus.zorlacservicebus;
+package xam.zorlac.servicebus;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,9 +1,9 @@
-package xam.zorlac.servicebus.zorlacservicebus.messageio;
+package xam.zorlac.servicebus.messageio;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.jms.annotation.JmsListener;
 import org.springframework.stereotype.Service;
-import xam.zorlac.servicebus.zorlacservicebus.models.PlanDetails;
+import xam.zorlac.servicebus.models.PlanDetails;
 
 @Service
 @Slf4j

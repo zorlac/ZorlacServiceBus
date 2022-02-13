@@ -1,4 +1,4 @@
-package xam.zorlac.servicebus.zorlacservicebus.config;
+package xam.zorlac.servicebus.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

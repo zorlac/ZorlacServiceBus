@@ -1,4 +1,4 @@
-package xam.zorlac.servicebus.zorlacservicebus.models;
+package xam.zorlac.servicebus.models;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
